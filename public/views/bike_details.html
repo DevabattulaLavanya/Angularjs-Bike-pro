@@ -1,0 +1,24 @@
+<a href="#/bikes">Go Back</a>
+<div class="panel panel-default" ng-init="getBike()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{bike.bikeName}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{bike.bikeimage}}" alt="{{bike.bikeimage}}">
+      </div>
+      <div class="col-md-8">
+        </p>Company : {{bike.bikecompany}}</p>
+        <ul class="list-group">
+          <li class="list-group-item">Gear type: {{bike.geartype}}</li>
+          <li class="list-group-item">Price: {{bike.price}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pull-right">
+  <a href="#/bike/edit/{{bike._id}}">Edit</a> |  <a href="#/bikes" ng-click="removeBike(bike._id)">Delete</a>
+  </div>

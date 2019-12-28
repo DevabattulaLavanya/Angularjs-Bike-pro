@@ -1,0 +1,18 @@
+<div class="panel panel-default" ng-init="getBikes()">
+  <div class="panel-heading">
+    <h3 class="panel-title">New Bikes</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+    	<div>
+    		<div class="col-md-6" ng-repeat="b in bike">
+    			<div class="">
+    				<h4>{{b.bikeName}}</h4>
+    				<p>{{b.bikecompany}}</p>
+    				<a class="btn btn-primary" href="#/bike/details/{{b._id}}">View Details</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<a href="#/bikes">Go Back</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add NEW BIKE</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="addBike()">
+        <div class="form-group">
+          <label>Bike Name</label>
+          <input type="text" class="form-control" ng-model="bike.bikeName" placeholder="Bike Name">
+        </div>
+        <div class="form-group">
+        <label>Bike Company</label>
+          <input type="text" class="form-control" ng-model="bike.bikecompany" placeholder="Bike Company">
+        </div>
+        <div class="form-group">
+          <label>Gear Type</label>
+          <select ng-model="bike.geartype" class="form-control">
+            <option value="Manual">Manual</option>
+            <option value="Automatic">Automatic</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Bike Price</label>
+          <input type="text" class="form-control" ng-model="bike.price" placeholder="Price">
+        </div>
+        <div class="form-group">
+          <label>Bike URL</label>
+          <input type="text" class="form-control" ng-model="bike.bikeimage" placeholder="Image URL">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
